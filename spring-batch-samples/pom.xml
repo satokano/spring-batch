@@ -150,7 +150,7 @@
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy</artifactId>
-			<version>1.6.3</version>
+			<version>2.4.21</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -281,124 +281,124 @@
 						<phase>generate-sources</phase>
 						<configuration>
 							<tasks>
-								<typedef resource="foundrylogic/vpp/typedef.properties" />
-								<taskdef resource="foundrylogic/vpp/taskdef.properties" />
+								<typedef resource="foundrylogic/vpp/typedef.properties"/>
+								<taskdef resource="foundrylogic/vpp/taskdef.properties"/>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/hsqldb.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/hsqldb.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/hsqldb.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/hsqldb.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-hsqldb.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-hsqldb.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/h2.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/h2.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/h2.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/h2.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-h2.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-h2.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/db2.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/db2.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/db2.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/db2.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-db2.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-db2.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/derby.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/derby.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/derby.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/derby.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-derby.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-derby.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/oracle10g.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/oracle10g.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/oracle10g.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/oracle10g.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-oracle10g.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-oracle10g.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/postgresql.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/postgresql.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/postgresql.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/postgresql.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-postgresql.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-postgresql.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/mysql.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/mysql.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/mysql.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/mysql.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-mysql.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-mysql.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/sqlserver.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/sqlserver.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/sqlserver.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/sqlserver.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-sqlserver.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-sqlserver.sql"/>
 								</vppcopy>
 								<vppcopy todir="${basedir}/target/generated-resources" overwrite="true">
 									<config>
 										<context>
-											<property key="includes" value="src/main/sql" />
-											<property file="${basedir}/src/main/sql/sybase.properties" />
+											<property key="includes" value="src/main/sql"/>
+											<property file="${basedir}/src/main/sql/sybase.properties"/>
 										</context>
 										<engine>
-											<property key="velocimacro.library" value="src/main/sql/sybase.vpp" />
+											<property key="velocimacro.library" value="src/main/sql/sybase.vpp"/>
 										</engine>
 									</config>
-									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp" />
-									<mapper type="glob" from="*.sql.vpp" to="*-sybase.sql" />
+									<fileset dir="${basedir}/src/main/sql" includes="business-schema.sql.vpp"/>
+									<mapper type="glob" from="*.sql.vpp" to="*-sybase.sql"/>
 								</vppcopy>
 							</tasks>
 						</configuration>
