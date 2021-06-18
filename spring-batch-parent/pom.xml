@@ -33,7 +33,7 @@
 		</developer>
 	</developers>
 	<properties>
-		<spring.framework.version>3.2.0.RELEASE</spring.framework.version>
+		<spring.framework.version>3.2.9.RELEASE</spring.framework.version>
 		<spring.amqp.version>1.1.2.RELEASE</spring.amqp.version>
 		<junit.version>4.10</junit.version>
 		<bundlor.version>1.0.0.RELEASE</bundlor.version>
@@ -199,7 +199,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -212,7 +212,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -411,7 +411,7 @@
 			<dependency>
 				<groupId>org.codehaus.woodstox</groupId>
 				<artifactId>woodstox-core-asl</artifactId>
-				<version>4.0.6</version>
+				<version>4.2.0</version>
 				<optional>true</optional>
 				<exclusions>
 					<exclusion>
@@ -447,7 +447,7 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-entitymanager</artifactId>
-				<version>4.1.9.Final</version>
+				<version>5.4.24.Final</version>
 				<optional>true</optional>
 				<exclusions>
 					<exclusion>
@@ -548,7 +548,7 @@
 			<dependency>
 				<groupId>com.thoughtworks.xstream</groupId>
 				<artifactId>xstream</artifactId>
-				<version>1.3</version>
+				<version>1.4.15</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.jettison</groupId>
@@ -717,7 +717,7 @@
 	  		<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-jpa</artifactId>
-				<version>1.2.0.RELEASE</version>
+				<version>1.5.0.RELEASE</version>
 				<optional>true</optional>
 			</dependency>
 	 		<dependency>
